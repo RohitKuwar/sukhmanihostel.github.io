@@ -1,0 +1,306 @@
+body {
+    background-color:orange;
+    font-size: 20px;
+}
+
+/* navbar starts */
+.navbar {
+    background-color: black;
+    opacity: 0.9;
+}
+
+.navbar-toggler {
+    background-color: green; 
+}
+
+.navbar-nav li a {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 2px;
+}
+
+.navbar-nav li a:hover {
+    background-color: green;
+    text-decoration: underline;
+}
+
+.navbar .current {
+    background-color: red;
+}
+
+/* navbar ends */
+
+h1 {
+    color: rgb(3, 80, 3);
+    font-size: 50px;
+    text-align: center;
+}
+
+#div1 {
+    background-color: firebrick;
+}
+
+#para {
+    border: 1px solid navy;
+    background-size: cover;
+    background-color: greenyellow;
+    padding: 25px;
+    max-width: 1300px;
+}
+
+#para p a {
+    text-decoration: none;
+    color: blue;
+}
+
+h2 {
+    color: purple;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+/* carousel starts */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(233, 13, 185);
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.carousel-indicators li {
+    height: 20px;
+    width: 4px;
+}
+
+/* carousel ends */
+
+#rooms {
+    color: rgb(21, 6, 88);
+    text-decoration: underline;
+}
+
+#rooms i {
+    color: rgb(5, 119, 53);
+}
+
+/* cards starts */
+.card {
+    max-width: 350px;
+    height: 300px;
+    border: 2px solid rgb(219, 34, 34);
+    box-sizing: border-box;
+    opacity: 0.9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    opacity: 1;
+    border: 4px solid rgb(224, 47, 47);
+    box-shadow: 0px 8px 20px rgba(230, 24, 219, 0.5);
+    transform: translateY(15px);
+}
+
+.card-body {
+    margin-top: 30px;
+    /* overflow: visible; */
+    position: relative;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Lato', sans-serif;
+}
+
+.card-body a {
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 2px solid white;
+    background: black;
+    opacity: 0.7;
+    padding: 5px;
+    border-width: 2px;
+}
+
+/* card ends */
+
+/* footer starts */
+.panel-footer {
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+}
+
+#hours {
+    font-size: 23px;
+}
+
+#hours span {
+    font-size: 30px;
+}
+
+#address {
+    font-size: 23px;
+}
+
+#address span {
+    font-size: 30px;
+}
+
+#map {
+    font-size: 23px;
+}
+
+#map span {
+    font-size: 30px;
+}
+
+.text-center {
+    font-size: 25px;
+}
+
+/* footer ends */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+    .card-body a:hover {
+        padding: 8px;
+        font-size: 22px;
+    }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .card-body a:hover {
+        padding: 8px;
+        font-size: 22px;
+    }
+   
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    /****** CSS ******/
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    #para{
+        height: 400px;
+        overflow: auto;
+    }
+
+    #para::-webkit-scrollbar{
+        width: 8px;
+    }
+
+    #para::-webkit-scrollbar-track {
+        background: rgb(37, 37, 37);
+        border-radius: 8px;
+    }
+
+    #para::-webkit-scrollbar-thumb{
+        border-radius: 30px;
+        background: linear-gradient(rgb(26, 91, 212),cyan);
+        box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25);
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 20px;
+        height: 20px;
+        background-color: rgb(233, 13, 185);
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+
+    .card-body {
+        margin-top: 30px;
+        position: relative;
+        color: white;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .card-body .card-title {
+        font-size: 12px;
+    }
+
+    .card-body .card-text {
+        font-size: 12px;
+    }
+
+    .card-body a {
+        font-size: 10px;
+        color: white;
+        text-decoration: none;
+        box-sizing: border-box;
+        border: 2px solid white;
+        background: black;
+        opacity: 0.7;
+        padding: 5px;
+        border-width: 2px;
+    }
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+
+    #para {
+        height: 400px;
+        overflow: auto;
+    }
+
+    #para::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    #para::-webkit-scrollbar-track {
+        background: rgb(37, 37, 37);
+        border-radius: 8px;
+    }
+
+    #para::-webkit-scrollbar-thumb {
+        border-radius: 30px;
+        background: linear-gradient(blue, cyan);
+        box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25);
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 12px;
+        height: 12px;
+        background-color: rgb(233, 13, 185);
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+
+    .carousel-indicators li {
+        height: 7px;
+        width: 7px;
+        border-radius: 50%;
+    }
+
+    #rooms {
+        color: rgb(21, 6, 88);
+        text-decoration: underline;
+        font-size: 35px;
+    }
+
+    #rooms i {
+        color: rgb(5, 119, 53);
+    }
+}
